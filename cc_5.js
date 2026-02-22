@@ -10,3 +10,9 @@ function calculateBasePay(rate,hours){
     return rate * Math.min(hours,40)
 }
 // Overtime pay 1.5x over 40 hrs//
+function calculateOvertimePay(rate, hours){
+    if (hours > 40)
+        return (hours - 40), * rate * 1.5
+    return 0;
+}
+//
